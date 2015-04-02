@@ -53,7 +53,6 @@
     NSLog(@"Problem with encryption");
   }
   
-  
 
 }
 
@@ -80,6 +79,8 @@
       NSFileManager *fileManager = [NSFileManager defaultManager];
       [fileManager removeItemAtPath:filePath error:&error];
       
+      if (!error)
+        [self createAlert:@"Success! Deleted the file."];
     }
     else {
       // problem decrypting, maybe key is wrong
