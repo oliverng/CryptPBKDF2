@@ -11,5 +11,14 @@
 @interface ViewController : UIViewController
 
 
+@property (weak, nonatomic) IBOutlet UITextField *messageTextField;
+@property (weak, nonatomic) IBOutlet UITextField *secretTextField;
+@property (weak, nonatomic) IBOutlet UITextView *secretWindow;
+
+
+- (IBAction)encryptButton:(id)sender;
+- (IBAction)decryptButton:(id)sender;
+
+
 @end
 
