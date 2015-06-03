@@ -2,8 +2,9 @@
 //  ViewController.m
 //  CryptPBKDF2
 //
-//  Created by Oliver and Vienne Ng on 2/4/15.
-//  Copyright (c) 2015 ONG. All rights reserved.
+//  Created by Oliver Ng on 30/5/15.
+//  Copyright (c) 2015 Security Compass. All rights reserved.
+//  http://www.securitycompass.com
 //
 
 #import "ViewController.h"
@@ -89,13 +90,13 @@
   }
   else{
     // no such file
-    [self createAlert:@"file no existz?!"];
+    [self createAlert:@"file no exists?!"];
   }
 }
 
 
 - (void)createAlert:(NSString *)messageStr{
-  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Crazy person"
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                   message:messageStr
                                                  delegate:self
                                         cancelButtonTitle:@"Oh, Right"
